@@ -19,6 +19,10 @@ metadata_obj = MetaData()
 engine = create_engine(DATABASE_URL)
 
 
+def get_connection():
+    return engine.connect()
+
+
 
 
 
